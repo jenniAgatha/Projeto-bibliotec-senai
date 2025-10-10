@@ -1,0 +1,23 @@
+
+
+
+:root {
+    --cinza: #26333D; 
+    --azul: #4A67DF;
+    --ciano: #2FD6CB;
+    --cinza-claro: #E9F0EF;
+    --branco: #FFFFFF;
+}
+
+header {
+    height: 100%;
+    width: auto;
+    background-color: var(--cinza);
+}
+header_2{
+      height: 200px;
+    width: auto;
+    background-color: var(--cinza-claro)
+}
+
+
