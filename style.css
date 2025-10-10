@@ -1,5 +1,9 @@
 body {
-    margin: 0;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  min-height: 100vh;
+
 }
 
 :root {
@@ -12,10 +16,10 @@ body {
 
 header {
     height:90px;
-    width: 100%;
+    width: auto;
     background-color: #26333D;
     padding: 0 40px;
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
     display: flex;
     align-items: center;
 }
@@ -33,44 +37,113 @@ header {
 
 .botoes {
   display: flex;
-  gap: 40px; /* espaçamento entre os botões */
+  gap: 10px; 
   margin-right: 40px;
 }
 
 button {
-  background-color: var(--cinza);
-  color: white;
+--clr-font-main: hsla(0 0% 20% / 100);
+
+  --radii: 0.5em;
+  cursor: pointer;
+  padding: 0.9em 1.4em;
+  min-width: 120px;
+  min-height: 44px;
+  font-size: var(--size, 0.90rem);
+  font-weight: 500;
+  transition: 0.8s;
+  background-size: 280% auto;
+  background-image: linear-gradient(
+    325deg,
+    var(--btn-bg-2) 0%,
+    var(--btn-bg-1) 55%,
+    var(--btn-bg-2) 90%
+  ); 
+  border: none;
+  border-radius: var(--radii);
+   color: var(--btn-bg-color); 
+
+   background-color: var(--cinza);
+  color: hwb(0 100% 0%);
   border: none;
   padding: 8px 16px;
   border-radius: 5px;
   cursor: pointer;
   height: 20px;
-  width: 50px;
+  width: 50px; 
+}
+
+.mulher{
+   height: 300px;
+  width: 300px;
+  position: relative;
+  left: 250px;
+  top: 150px; /* aumenta para descer mais */
+  margin-left: 0; /* garante que fique à esquerda */  weight: 300px;
+}
+  
+.slogan{
+height: 700px ;
+  width: 1700px;
+  padding: 1rem;
+  background-color: var(--cinza);
+  border-radius: 10px;
+   font-weight: 600;
+  /* color: rgb(31 41 55); */
+}
+
+.container{
+
+width: 1900px;
+
+height: 900px;
+display: flex;
+justify-content: center;
+align-items: center;
 }
 
 
-/* inspired form gumroad website */
 .btn {
-  --bg:#4A67DF ;
-  --hover-bg: #2FD6CB;
-  --hover-text: #000;
-  color: #fff;
+  --clr-font-main: hsla(0 0% 20% / 100);
+  --btn-bg-1: hsla(194 100% 69% / 1);
+  --btn-bg-2: hsla(217 100% 56% / 1);
+  --btn-bg-color: hsla(360 100% 100% / 1);
+  --radii: 0.5em;
   cursor: pointer;
-  border: 1px solid var(--bg);
-  border-radius: 4px;
-  padding: 0.8em 2em;
-  background: var(--bg);
-  transition: 0.2s;
+  padding: 0.9em 1.4em;
+  min-width: 120px;
+  min-height: 44px;
+  font-size: var(--size, 0.90rem);
+  font-weight: 500;
+  transition: 0.8s;
+  background-size: 280% auto;
+  background-image: linear-gradient(
+    325deg,
+    var(--btn-bg-2) 0%,
+    var(--btn-bg-1) 55%,
+    var(--btn-bg-2) 90%
+  );
+  border: none;
+  border-radius: var(--radii);
+  color: var(--btn-bg-color);
+  box-shadow:
+    0px 0px 20px rgba(71, 184, 255, 0.5),
+    0px 5px 5px -1px rgba(58, 125, 233, 0.25),
+    inset 4px 4px 8px rgba(175, 230, 255, 0.5),
+    inset -4px -4px 8px rgba(19, 95, 216, 0.35);
+}
+
+.btn-shadow:is(:focus, :focus-visible, :active) {
+  outline: none;
+  box-shadow:
+    0 0 0 3px var(--btn-bg-color),
+    0 0 0 6px var(--btn-bg-2);
 }
 
 .btn:hover {
-  color: var(--hover-text);
-  transform: translate(-0.25rem, -0.25rem);
-  background: var(--hover-bg);
-  box-shadow: 0.25rem 0.25rem var(--bg);
+   background-position: right top;
 }
 
 .btn:active {
-  transform: translate(0);
-  box-shadow: none;
+ transition: linear;
 }
