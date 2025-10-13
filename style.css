@@ -74,12 +74,13 @@ button {
 }
 
 .mulher{
-   height: 300px;
+  height: 300px;
   width: 300px;
   position: relative;
   left: 250px;
-  top: 150px; /* aumenta para descer mais */
-  margin-left: 0; /* garante que fique à esquerda */  weight: 300px;
+  top: 170px;
+  margin-left: 0;
+  animation: flutuar 2s ease-in-out infinite;
 }
   
 .slogan{
@@ -147,3 +148,80 @@ align-items: center;
 .btn:active {
  transition: linear;
 }
+
+
+.container {
+  width: fit-content;
+  gap: 10px
+}
+
+.folder {
+  width: min-content;
+  margin: auto;
+  animation: float 2s infinite linear;
+}
+
+.mulher{
+
+}
+
+@keyframes flutuar {
+  0%,100%{
+    transform: translateY(0);
+  
+  }
+  50%{
+    transform: translateY(-30px);
+  }
+}
+
+.livro1{
+
+ height: 150px;
+  width: 170px;
+  position: relative;
+  left: 290px;
+  top: 170px;
+  margin-left: 0;
+  transform: rotate(15deg);
+ animation: flutuar 3s ease-in-out infinite;
+ 
+ 
+}
+
+
+.livro2{
+
+ height: 150px;
+  width: 150px;
+  position: relative;
+ right: 400px;
+  top: 170px;
+  margin-left: 0;
+   transform: rotate(-15deg);
+   margin-bottom: 90px;
+    animation: flutuar 3s ease-in-out infinite;
+   
+
+
+ 
+}
+
+.livro3{
+  
+ height: 150px;
+  width: 150px;
+  position: relative;
+    top: -100px;
+
+  margin-left: 0;
+   transform: rotate(-15deg);
+   left: -180px;
+   transform: rotate(-15deg);
+   animation: flutuar 4s ease-in-out infinite;
+
+
+
+}
+
+
