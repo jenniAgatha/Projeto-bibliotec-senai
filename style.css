@@ -80,7 +80,8 @@ button {
   left: 250px;
   top: 170px;
   margin-left: 0;
-  animation: flutuar 2s ease-in-out infinite;
+  animation: flutuar 5s ease-in-out infinite;
+
 }
   
 .slogan{
@@ -94,13 +95,14 @@ height: 700px ;
 }
 
 .container{
-
-width: 1900px;
-
-height: 900px;
-display: flex;
-justify-content: center;
-align-items: center;
+  box-sizing: border-box;
+  width: 2000px
+  max-width: 1200px; /* limitação para não estourar telas grandes */
+  height: 900px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 24px auto; /* centraliza horizontalmente */
 }
 
 
@@ -151,8 +153,8 @@ align-items: center;
 
 
 .container {
-  width: fit-content;
-  gap: 10px
+  /* mantido por compatibilidade: usa max-width e margin para centralizar */
+  gap: 10px;
 }
 
 .folder {
@@ -161,9 +163,7 @@ align-items: center;
   animation: float 2s infinite linear;
 }
 
-.mulher{
 
-}
 
 @keyframes flutuar {
   0%,100%{
@@ -224,4 +224,14 @@ align-items: center;
 
 }
 
+.bestseller{
+  width: 2000px;
+  height: 200px;
+  background-color: var(--cinza-claro)
+}
+
+.manga{
+  height: 300px;
+  width: 200px;
+}
 
