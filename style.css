@@ -225,3 +225,9 @@ align-items: center;
 }
 
 
+   .texto {
+    order: -1;       /* faz o texto aparecer antes dos imgs */
+    flex: 0 0 45%;   /* largura aproximada do bloco de texto */
+    text-align: left;
+}
+
