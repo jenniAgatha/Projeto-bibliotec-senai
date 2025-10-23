@@ -3,6 +3,9 @@ body {
   flex-direction: column;
   /* align-items: center; */
   min-height: 100vh;
+  background-color: #26333D;
+  max-width: 1500px;
+  max-height: 100000px;
 
 }
 
@@ -82,6 +85,20 @@ button {
   margin-left: 0;
   animation: flutuar 2s ease-in-out infinite;
 }
+
+
+.homem{
+  height: 300px;
+  width: 300px;
+  left: 300px;
+ 
+margin-bottom: 100px;
+margin-left: 50px;
+  animation: flutuar 2s ease-in-out infinite;
+}
+
+
+
   
 .slogan{
 height: 700px ;
@@ -161,9 +178,7 @@ align-items: center;
   animation: float 2s infinite linear;
 }
 
-.mulher{
 
-}
 
 @keyframes flutuar {
   0%,100%{
@@ -200,6 +215,7 @@ align-items: center;
   margin-left: 0;
    transform: rotate(-15deg);
    margin-bottom: 90px;
+   left: ;
     animation: flutuar 3s ease-in-out infinite;
    
 
@@ -220,8 +236,12 @@ align-items: center;
    transform: rotate(-15deg);
    animation: flutuar 4s ease-in-out infinite;
 
+}
+
+.texto1{
+height: 600PX;
+width: 600px;
+bottom: 100px;
 
 
 }
-
-
