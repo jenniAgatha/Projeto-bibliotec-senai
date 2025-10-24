@@ -1,11 +1,10 @@
 body {
   display: flex;
   flex-direction: column;
-  /* align-items: center; */
   min-height: 100vh;
   background-color: #26333D;
   max-width: 1500px;
-  max-height: 100000px;
+  max-height: 1200px;
 
 }
 
@@ -18,13 +17,12 @@ body {
 }
 
 header {
-    height:90px;
-    width: auto;
-    background-color: #26333D;
-    padding: 0 40px;
-    /* box-sizing: border-box; */
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 40px;
+  background-color: #26333D;
+  height: 90px;
 }
 
 .logo{
@@ -38,10 +36,10 @@ header {
 
 
 
-.botoes {
-  display: flex;
-  gap: 10px; 
-  margin-right: 40px;
+.botao1 {
+ 
+ width: auto;
+margin-left: auto;
 }
 
 button {
@@ -80,9 +78,10 @@ button {
   height: 300px;
   width: 300px;
   position: relative;
-  left: 250px;
+ 
   top: 170px;
   margin-left: 0;
+
   animation: flutuar 2s ease-in-out infinite;
 }
 
@@ -91,9 +90,9 @@ button {
   height: 300px;
   width: 300px;
   left: 300px;
- 
 margin-bottom: 100px;
-margin-left: 50px;
+margin-left: 100px;
+  
   animation: flutuar 2s ease-in-out infinite;
 }
 
@@ -110,14 +109,14 @@ height: 700px ;
   /* color: rgb(31 41 55); */
 }
 
-.container{
-
-width: 1900px;
-
-height: 900px;
-display: flex;
-justify-content: center;
-align-items: center;
+.container {
+  display: flex;
+  align-items: flex-start; /* elementos alinhados ao topo */
+  justify-content: flex-start; /* alinha à esquerda */
+  gap: 20px; /* espaço entre as imagens */
+  margin-top: 40px; /* distância do header */
+  margin-left: 40px; /* um pequeno recuo da borda */
+  flex-wrap: wrap; /* permite quebrar linha se precisar */
 }
 
 
@@ -130,6 +129,7 @@ align-items: center;
   cursor: pointer;
   padding: 0.9em 1.4em;
   min-width: 120px;
+  margin-left: 100px;
   min-height: 44px;
   font-size: var(--size, 0.90rem);
   font-weight: 500;
@@ -215,7 +215,7 @@ align-items: center;
   margin-left: 0;
    transform: rotate(-15deg);
    margin-bottom: 90px;
-   left: ;
+
     animation: flutuar 3s ease-in-out infinite;
    
 
@@ -243,5 +243,11 @@ height: 600PX;
 width: 600px;
 bottom: 100px;
 
-
+}
+.container_botoes {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-end;
+  width: 100%;
+margin-left: 1050px;
 }
