@@ -72,35 +72,41 @@ button {
   height: 20px;
   width: 50px; 
 }
-
 .mulher{
   height: 300px;
   width: 300px;
-  position: relative;
-  left: 250px;
-  top: 170px;
-  margin-left: 0;
+  /* permitir fluxo normal dentro do flex */
+  position: static;
+  margin: 0 10px 0 0;
   animation: flutuar 2s ease-in-out infinite;
 }
   
-.slogan{
-height: 700px ;
-  width: 1700px;
-  padding: 1rem;
+.slogan {
+  position: relative;
+  display: flex; /* mantém a mulher centralizada */
+  align-items: center;
+  justify-content: center;
+  padding: 3.2rem;
   background-color: var(--cinza);
-  border-radius: 10px;
-   font-weight: 600;
-  /* color: rgb(31 41 55); */
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+  overflow: visible;
+  min-width: 720px; /* aumenta "fundo" sem alterar container */
+  box-sizing: border-box;
+  z-index: 0;
 }
 
-.container{
 
-width: 1900px;
-
-height: 900px;
-display: flex;
-justify-content: center;
-align-items: center;
+.container {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+  box-sizing: border-box;
 }
 
 
@@ -174,60 +180,41 @@ align-items: center;
     transform: translateY(-30px);
   }
 }
-
 .livro1{
-
- height: 150px;
+  height: 150px;
   width: 170px;
-  position: relative;
-  left: 290px;
-  top: 170px;
-  margin-left: 0;
+  position: static;
+  margin: 0 10px;
   transform: rotate(15deg);
- animation: flutuar 3s ease-in-out infinite;
- 
- 
+  animation: flutuar 3s ease-in-out infinite;
 }
 
 
 .livro2{
-
- height: 150px;
+  height: 150px;
   width: 150px;
-  position: relative;
- right: 400px;
-  top: 170px;
-  margin-left: 0;
-   transform: rotate(-15deg);
-   margin-bottom: 90px;
-    animation: flutuar 3s ease-in-out infinite;
-   
-
-
- 
+  position: static;
+  margin: 0 10px;
+  transform: rotate(-15deg);
+  animation: flutuar 3s ease-in-out infinite;
 }
 
-.livro3{
-  
- height: 150px;
+ .livro3{
+  height: 150px;
   width: 150px;
-  position: relative;
-    top: -100px;
-
-  margin-left: 0;
-   transform: rotate(-15deg);
-   left: -180px;
-   transform: rotate(-15deg);
-   animation: flutuar 4s ease-in-out infinite;
-
-
-
+  position: static;
+  margin: 0 10px;
+  transform: rotate(-15deg);
+  animation: flutuar 4s ease-in-out infinite;
 }
 
 
-   .texto {
-    order: -1;       /* faz o texto aparecer antes dos imgs */
-    flex: 0 0 45%;   /* largura aproximada do bloco de texto */
-    text-align: left;
+.texto {
+  flex: 1 1 45%;
+  text-align: left;
+  color: var(--cinza-claro);
+  padding: 1rem;
+  box-sizing: border-box;
 }
+
 
