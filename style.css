@@ -92,27 +92,30 @@ button {
   display: flex; /* mantém a mulher centralizada */
   align-items: center;
   justify-content: center;
-  padding: 3.2rem;
+  padding: 2rem;
   background-color: var(--cinza);
   border-radius: 20px;
   box-shadow: 0 10px 30px rgba(0,0,0,0.15);
   overflow: visible;
-  min-width: 720px; /* aumenta "fundo" sem alterar container */
+  width: 100%;
+  max-width: 1900px; /* aumentado para 1900px conforme solicitado */
+  margin: 0 auto; /* centraliza o slogan em telas maiores */
   box-sizing: border-box;
   z-index: 0;
 }
 
 
-.container {
+.containerSlogan {
   display: flex;
   gap: 2rem;
   align-items: center;
   justify-content: center;
   width: 100%;
-  max-width: 1200px;
+  max-width: 1900px; /* mantém alinhado com o .slogan */
   margin: 0 auto;
   padding: 1rem;
   box-sizing: border-box;
+
 }
 
 
@@ -162,10 +165,10 @@ button {
 }
 
 
-.container {
+.container{
   width: fit-content;
   gap: 10px;
- /* transform: translateX(-720px); */
+
 }
 
 .folder {
@@ -174,9 +177,6 @@ button {
   animation: float 2s infinite linear;
 }
 
-.mulher{
-
-}
 
 @keyframes flutuar {
   0%,100%{
@@ -229,4 +229,86 @@ button {
 
 
 
+.maislidos{
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
 
+}
+
+.maisLidosLivros{
+ display: flex;
+  justify-content: center;
+  /* width: 1000px; */
+  height: 400px;
+  background-color: #2FD6CB;
+  opacity: 20%;
+  margin: 30px;
+  border-radius: 20px;
+  padding: 20px;
+  align-items: center;
+}
+
+.books{
+
+  position: relative;
+  border-radius: 10px;
+  width: 220px;
+  height: 300px;
+  background-color: whitesmoke;
+  -webkit-box-shadow: 1px 1px 12px #000;
+  box-shadow: 1px 1px 12px #000;
+  -webkit-transform: preserve-3d;
+  -ms-transform: preserve-3d;
+  transform: preserve-3d;
+  -webkit-perspective: 2000px;
+  perspective: 2000px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  color: #000;
+
+}
+
+.cover{
+    top: 0;
+  position: absolute;
+  background-color: lightgray;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  cursor: pointer;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  -webkit-transform-origin: 0;
+  -ms-transform-origin: 0;
+  transform-origin: 0;
+  -webkit-box-shadow: 1px 1px 12px #000;
+  box-shadow: 1px 1px 12px #000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+
+}
+
+
+
+.books:hover .cover {
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  -webkit-transform: rotatey(-80deg);
+  -ms-transform: rotatey(-80deg);
+  transform: rotatey(-80deg);
+}
