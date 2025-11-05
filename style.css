@@ -235,17 +235,59 @@ button {
 
 }
 
-.maisLidosLivros{
- display: flex;
+.maisLidosLivros {
+  position: relative;
+  display: flex;
   justify-content: center;
-  /* width: 1000px; */
   height: 400px;
-  background-color: rgba(47, 214, 203, 0.2); /* Cor #2FD6CB com 20% de opacidade */
+  background-color: rgba(47, 214, 203, 0.2);
   margin: 20px;
   border-radius: 20px;
   padding: 20px;
   align-items: center;
-  gap: 60px; /* Adiciona espaço entre as divs books */
+  overflow: hidden;
+}
+
+#caroussel-books {
+  display: flex;
+  gap: 60px;
+  transition: transform 0.5s ease;
+  padding: 0 20px;
+  position: relative;
+  min-width: 100%;
+}
+
+/* Navigation Buttons */
+#prev-btn,
+#next-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 10;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+#prev-btn {
+  left: 20px;
+}
+
+#next-btn {
+  right: 20px;
+}
+
+#prev-btn:hover,
+#next-btn:hover {
+  background-color: white;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.3);
 }
 
 .books{
