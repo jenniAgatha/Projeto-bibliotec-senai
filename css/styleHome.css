@@ -382,5 +382,57 @@ button {
   font-family: "Montserrat", sans-serif;
 }
 
+.SaibaComo {
+  text-align: left;
+  margin-top: 50px;
+  font-size: 1.2rem;
+  background-color: #617a8b;
+  border-radius: 20px;
+  padding: 20px;
+  margin: 20px;
+  }
 
 
+.SaibaComo p {
+  font-family: "Montserrat", sans-serif;
+  color: rgba(255, 255, 255, 0.74); 
+  margin-bottom: 16px; /* espaço entre parágrafo e botão */
+}
+
+.SaibaComo h1 {
+  font-family: "Montserrat", sans-serif;
+  color: #26333c;
+  margin-bottom: 10px;
+  font-size: 30px;
+}
+
+.btnLivrosDisponiveis{
+  /* padding: 10.5px px; */
+  border: 0;
+  border-radius: 300px;
+  background-color: #2ba8fb;
+  color: #ffffff;
+  font-weight: Bold;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  
+}
+
+.btnLivrosDisponiveis:hover{
+  background-color: #6fc5ff;
+  box-shadow: 0 0 20px #6fc5ff50;
+  transform: scale(1.1);
+}
+
+.btnLivrosDisponiveis:active{
+  background-color: #3d94cf;
+  transition: all 0.25s;
+  -webkit-transition: all 0.25s;
+  box-shadow: none;
+  transform: scale(0.35);
+}
+
+/* quando o botão está dentro da caixa SaibaComo, garantir espaçamento acima */
+.SaibaComo .btnLivrosDisponiveis{
+  margin-top: 8px;
+}

@@ -7,18 +7,18 @@
     @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
     </style>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/styleHome.css">
     <link rel="icon" href="imagens/Group (1).png">
     <title>Bibliotec</title>
   </head>
   <header class="header">
         <img class="logo" src="/imagens/Group 106 (1).png" alt="">
         <div class="botoes">
-       <button class="button">About</button>
-     <button class="">Books</button>
-     <button class="">Contact</button>
+      <a href="sobre.html"><button class="button">About</button></a>
+      <!-- <a href="books.html"><button class="">Books</button> -->
+      <a href="contato.html"><button class="">Contact</button></a>
      <div class="btn_space">
-     <button class="btn">Login</button>
+     <a href="login.html"><button class="btn">Login</button></a>
      </div>
      </div>
       <nav class>
@@ -45,7 +45,7 @@
       </div>
 
       <div class="maislidos">
-        <h1>Mais lidos</h1>
+        <h1>Nossos Livros</h1>
       </div>
       <div class="maisLidosLivros">
           <span id="prev-btn" class="material-symbols-outlined">
@@ -113,12 +113,23 @@
             <div class="cover">
               <img src="/imagens/De volta aos anos 90.jpg" alt="" height="300px" width="220px"> 
             </div>
-            <!-- <h3> De volta aos anos 90</h3> -->
          </div>
-         
-       
-        
+          <div class="books">
+            <div class="sinopse">
+            <h2>O segredo</h2>
+            <p>O livro "O Segredo" de Rhonda Byrne aborda a Lei da Atração, argumentando que os pensamentos positivos podem atrair para a vida de uma pessoa tudo o que ela deseja, como saúde, riqueza e felicidade. </p>
+            </div>
+            <div class="cover">
+              <img src="/imagens/Osegredo.jpg" alt="" height="300px" width="220px"> 
+            </div>
+         </div>
       </div>
+      </div>
+
+      <div class="SaibaComo">
+          <h1> Eai, se interessou?</h1>
+          <p>Saiba como pegar emprestado!!</p>
+          <a href="books.html"><button class ="btnLivrosDisponiveis">Ver livros disponíveis</button>
       </div>
 
 <script src="script.js"></script>
